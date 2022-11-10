@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+
+html{
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./14625.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    padding: 30px;
+}
+
+
+
+/* toda parte central do site */
+.principal{
+    background-color: rgb(9, 9, 91);
+    max-width: 1000px;
+    border: 3px solid rgb(27, 84, 122);
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0.5;
+    
+}
+
+/* div da logo e slogan */
+.principal .logomarca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+/* titulo do site*/
+.principal .logomarca .logo-principal{
+    padding-top: 10px;
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(106, 180, 255);
+    -webkit-text-stroke: 1px white;
+    
+    
+}
+
+.principal .logomarca .sub-logo{
+    font-size: 13.5px;
+    color: rgb(40, 178, 252);
+    -webkit-text-stroke: 1px white;
+    font-style: italic;
+}
+
+.principal .conteudo{
+    margin-top: 15px;
+}
+
+.principal .menus{
+    display: flex;
+    font-size: 20px;
+}
+
+.principal .menus .menu{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.principal .menus h3{
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.principal .menus .menu.selecionado{
+    background-color: rgb(16, 16, 137);
+    -webkit-text-stroke: 1px white;
+}
+
+.principal .informacao-conteudo{
+    background-color: rgb(16, 16, 137);
+    -webkit-text-stroke: 1px white;
+}
+
+.principal .menus .menu:hover{
+    background-color: rgb(29, 29, 210);
+    -webkit-text-stroke: 1px white;
+}
+
+.informacoes-conteudo .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+    
+}
+
+.informacoes-conteudo .informacao.selecionado{
+    display: block;
+    background-color: rgb(16, 16, 137);
+    color: white;
+    
+}
+
+.informacoes-conteudo .sub-titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacao-conteudo .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+    
+}
+
+.informacoes-conteudo .descricao span{
+    color: rgb(71, 156, 241);
+}
+
+.contatos{
+    gap: 25px;
+    align-items: center;
+    max-height: 200px;
+    overflow-y: auto;
+    color: white;
+}
+
+.contatos a{
+    color: aliceblue;
+    font-family:'Arial Narrow Bold', sans-serif;
+    padding-left: 5px;
+}
+
+.contatos .rodape{
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.contatos li a:hover{
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    transition: background-color 0.2s ease-in-out; 
+}
+
+.contatos img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.letra-miuda{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    opacity: 0.8;
+}
